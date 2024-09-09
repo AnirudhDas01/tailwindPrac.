@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head >
+<body >
+    <!-- navbar section starts  -->
+    <nav class="p-6 bg-[#F9F9FF] flex items-center justify-between max-h-[90px] border-[1px] border-[#F0F1F7]">
+            <a href="" class="flex items-center gap-2">
+                <img src="assets/asset 0.png" alt="" class="object-cover max-w-12 max-h-12">
+                <span class="text-lg font-semibold ">ToDesktop</span>
+            </a>
+            <div class="lg:flex gap-12 hidden text-lg">
+                <a href="" class="font-medium hover:text-[#3238f2]">Pricing</a>
+                <a href="" class="font-medium hover:text-[#3238f2]">Docs</a>
+                <a href="" class="font-medium hover:text-[#3238f2]">Changelog</a>
+                <a href="" class="font-medium hover:text-[#3238f2]">Blogs</a>
+                <a href="" class="font-medium hover:text-[#3238f2]">Login</a>
+                
+            </div>
+            <button class="font-medium lg:flex hidden gap-4 items-center border-[1.6px] border-gray-300 hover:border-gray-400 p-2 rounded-xl">
+                <img src="./assets/asset 1.svg" alt="" class="max-h-24 max-w-24">
+                <span>Electron Developer</span>
+                <i class="fa-solid fa-arrow-right text-gray-400"></i>
+            </button>
+            <button href="" class="p-2 lg:hidden" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars text-xl text-gray-400 "></i>
+            </button>
+            <div class="fixed hidden bg-white inset-0 max-w-full z-10" id="nav-box">
+                <nav class="p-6 bg-white">
+                    <div class="flex justify-between items center mb-8">
+                        <a href="" class="flex items-center gap-2">
+                            <img src="assets/asset 0.png" alt="" class="object-cover max-w-12 max-h-12">
+                            <span class="text-lg font-medium ">ToDesktop</span>
+                        </a>
+                        <button onclick="toggleMenu()">
+                            <i class="fa-solid fa-xmark text-gray-400 text-xl -translate-x-2 -translate-y-1"></i>
+                        </button>
+                    </div>
+                    <div class="flex flex-col gap-7">
+                        <a href="" class="font-medium hover:text-[#3238f2]">Pricing</a>
+                        <a href="" class="font-medium hover:text-[#3238f2]">Docs</a>
+                        <a href="" class="font-medium hover:text-[#3238f2]">Changelog</a>
+                        <a href="" class="font-medium hover:text-[#3238f2]">Blogs</a>
+                        <a href="" class="font-medium hover:text-[#3238f2]">Login</a>
+                    </div>
+                    <button class="font-medium gap-4 items-center flex flex-nowrap mt-20">
+                            <img src="./assets/asset 1.svg" alt="" class="max-h-24 max-w-24">
+                            <span>Electron Developer</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                    </button>
+                </nav>
+            </div>
+    </nav>
+    <!-- navbar section ends  -->
+    <!-- download section starts  -->
+    <div id="hero" class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
+        <div id="hero-container" class="max-w-4xl mx-auto px-6 pb-32 flex flex-col pt-9">
+            <div id="version-text" class="group flex my-6 gap-2 items-center bg-[#FFF6CC] w-fit px-[7px] py-[2px] border-[1px] border-yellow-200 rounded-md shadow-md hover:translate-y-[-2px] duration-200 hover:border-yellow-500 hover:shadow-lg sm:mx-auto">
+                 <div class="w-2 h-2 bg-yellow-400 rounded-full border-[1px] border-yellow-500"></div>
+                 <p class="text-[#713F12] font-bold mb-1">v0.23.1</p>
+                 <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-[2px] duration-300 group-hover:text-yellow-700"></i>
+            </div>
+            <div class="md:flex gap-6 justify-center hidden text-gray-400">
+                <a>
+                    <i class="fa-solid fa-file-code"></i>
+                    Code optional</a>
+                <a>
+                    <i class="fa-regular fa-hand"></i>
+                    Drag & drop builder</a>
+                <a>
+                    <i class="fa-regular fa-folder-open"></i>
+                    Windows, Mac, Linus</a>
+            </div>
+            <h1 class="font-display text-5xl font-bold sm:text-center sm:text-7xl">Web app to desktop app in minutes</h1>
+            <p class="mx-auto mt-8 max-w-2xl text-xl leading-8 text-gray-800 sm:text-center sm:text-2xl" data-svelte-h="svelte-1ay5osr">Take your web app codebase and transform it into a cross platform desktop app with
+                native functionality.</p>
+                <div id="button-container" class="max-w-full flex flex-col sm:flex-row mt-8 gap-5 justify-center">
+                    <a href="" class="text-center p-3 border-[1px] bg-[#3238F2] text-white hover:bg-[#3238f2ec] duration-200 rounded-lg text-lg font-semibold px-8">Download Now</a>
+                    <a href="" class="text-center p-3 border-[1px] bg-white border-gray-400 hover:border-gray-500 duration-200 rounded-lg text-lg font-semibold  px-8">Read Docs</a>
+                </div>
+        </div>
+        <div id="companies-container" class="flex flex-col gap-8">
+            <div id="companies-title" class="flex items-center justify-center gap-2">
+                <img src="assets/asset 2.svg" alt="" class="mt-4">
+                <span class="font-medium">APPS POWERED BY TODESKTOP</span>
+                <img src="assets/asset 2.svg" alt="" class=" -scale-x-100 mt-4">
+            </div>
+            <div id="lines-group" class="flex flex-col gap-4 justify-center">
+                <div id="line-1" class="flex gap-4 w-screen -translate-x-48 transition-transform ease-linear">
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 3.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 4.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 5.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 6.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 7.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 8.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 22.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 23.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 24.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 25.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 26.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 27.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 28.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 29.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 10.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    
+                </div>
+                <div id="line-2" class="flex gap-4 w-screen p-4 md:min-w-32 md:min-h-32 -translate-x-36 transition-transform ease-linear">
+                    <div class="flex flex-col min-h-24 min-w-24 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 9.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 10.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 11.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 12.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 13.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 14.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 21.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 31.jpeg" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 32.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 34.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 35.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 49.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 36.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 44.svg" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 3.png" alt="" class="w-12 h-12 md:w-16 md:h-16"> <!-- add a different image -->
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 4.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span> <!--  add a different image here-->
+                    </div>
+                </div>
+                <div id="line-3" class="sm:hidden flex gap-4 w-screen p-4 mt-[-16px] transition-transform ease-linear">
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 15.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 16.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 17.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 18.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 19.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                    <div class="flex flex-col min-h-24 min-w-24 md:min-w-32 md:min-h-32 justify-center items-center bg-white rounded-xl border-gray-400 border-[1px]">
+                        <img src="assets/asset 20.png" alt="" class="w-12 h-12 md:w-16 md:h-16">
+                        <span class="text-[12px] md:text-[16] font-semibold">UnBounce</span>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1000px]"></div>
+        </div>
+        
+    </div>
+    <!-- download section ends  -->
+    <!-- bento grid  starts -->
+     <!-- bento grid ends  -->
+    <script src="../script/main.js"></script>
+</body>
+</html>
