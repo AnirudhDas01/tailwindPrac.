@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-
+    .container {
+        @apply px-6 py-12 max-w-7xl mt-16 mx-auto lg:px-8 lg:mt-32;
+    } 
 }
