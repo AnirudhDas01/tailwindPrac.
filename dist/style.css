@@ -721,6 +721,10 @@ h1, h2, h3 {
   margin-top: -1rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1103,6 +1107,10 @@ h1, h2, h3 {
   gap: 2rem;
 }
 
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1197,6 +1205,21 @@ h1, h2, h3 {
   border-color: rgb(234 179 8 / var(--tw-border-opacity));
 }
 
+.border-gray-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-gray-200 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
 .border-e-yellow-400 {
   --tw-border-opacity: 1;
   border-inline-end-color: rgb(250 204 21 / var(--tw-border-opacity));
@@ -1284,6 +1307,16 @@ h1, h2, h3 {
 
 .bg-\[\#3238f2ad\] {
   background-color: #3238f2ad;
+}
+
+.bg-blue-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FBFBFD\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 251 253 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -1593,6 +1626,16 @@ h1, h2, h3 {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+.text-\[\#3238F2\] {
+  --tw-text-opacity: 1;
+  color: rgb(50 56 242 / var(--tw-text-opacity));
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1689,6 +1732,10 @@ h1, h2, h3 {
     display: none;
   }
 
+  .sm\:w-\[33\%\] {
+    width: 33%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1710,6 +1757,10 @@ h1, h2, h3 {
   .sm\:font-semibold {
     font-weight: 600;
   }
+
+  .sm\:font-bold {
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1727,6 +1778,10 @@ h1, h2, h3 {
 
   .md\:w-16 {
     width: 4rem;
+  }
+
+  .md\:w-\[33\%\] {
+    width: 33%;
   }
 
   .md\:min-w-32 {
@@ -1762,6 +1817,10 @@ h1, h2, h3 {
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-\[33\%\] {
+    width: 33%;
   }
 
   .lg\:translate-x-24 {
